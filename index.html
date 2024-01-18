@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body class="main">
+    <div class="background">
+        Kalkulator Matematik
+    </div>
+    <div style="width: fit-content; margin: auto;"> 
+        <img src="Persegi.png" alt="persegi" style="width: 400px;">
+    </div>
+    <div>
+        <select id="jenis" class="selectpicker" onchange="cek()"> 
+            <option value="keliling">Keliling Persegi</option>
+            <option value="luas">Luas Persegi</option>
+        </select>
+    </div>
+    <div id="keliling">
+        <div>Rumus Keliling Persegi Yaitu :</div>
+        <div>K = 4 x S</div>
+        <div>Di mana: </div>
+        <div>K = Keliling</div>
+        <div>S = Sisi</div>
+        <hr>
+        <h2>Hitung Keliling Persegi</h2>
+        <input type="number" id="sisi_keliling">
+        <button id="btnHitungKel" onclick="hitungkeliling()">Hitung</button>
+        <h3>Hasil : <div id="hasil_keliling"></div></h3>
+    </div>
+    <div id="luas">
+        <div>Rumus Luas Persegi Yaitu :</div>
+        <div>L = S x S</div>
+        <div>Di mana: </div>
+        <div>L = Luas</div>
+        <div>S = Sisi</div>
+        <hr>
+        <h2>Hitung Luas Persegi</h2>
+        <input type="number" id="sisi_luas">
+        <button id="btnHitungLuas" onclick="hitungluas()">Hitung</button>
+        <h3>Hasil : <div id="hasil_luas"></div></h3>
+    </div>
+    
+    
+</body>
+</html>
